@@ -1,0 +1,11 @@
+/* components/indexTitle/indexTitle.wxss */
+.choose_title{
+  width:100%;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.choose_title>view{
+  text-align: center;
+  color:#999;
+  letter-spacing: 10rpx;
+}
