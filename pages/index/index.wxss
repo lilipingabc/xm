@@ -1,0 +1,96 @@
+/**index.wxss**/
+
+.search {
+  width: 100%;
+  height: 80rpx;
+  background: #ff0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.search>view {
+  width: 90%;
+  height: 60rpx;
+  background: #fff;
+  border-radius: 20rpx;
+}
+
+.search>view>text {
+  color: #999;
+  font-size: 30rpx;
+}
+
+.navList .nav {
+  background: #ff0;
+  
+}
+
+.TabCur {
+  color: #999;
+}
+
+.navChoose {
+  background: #fff;
+}
+
+.choose_list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.choose_item {
+  width: 25%;
+  text-align: center;
+  margin: 20rpx 0;
+}
+
+.choose_item>image {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+/* 商品列表 */
+
+.goodsList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.goods_items {
+  width: 370rpx;
+  background: #fff;
+}
+
+.goods_items>image {
+  width: 100%;
+  height: 370rpx;
+}
+
+.goods_title {
+  margin: 10rpx 10rpx;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.goods_price{
+  margin: 10rpx 10rpx;
+	color: red;
+}
+.tb{
+  width: 60rpx;
+  height: 40rpx;
+  background: red;
+  border-radius: 10rpx;
+  margin: 0 10rpx;
+  color: #fff;
+}
+.tm{
+  width: 60rpx;
+  height: 40rpx;
+  background: orange;
+  border-radius: 10rpx;
+  margin: 0 10rpx;
+  color: #fff;
+}

@@ -1,0 +1,17 @@
+<!--pages/search/search.wxml-->
+<view>
+  <view class="search">
+    <input placeholder="输入你想要的商品" placeholder-style="font-size:32rpx;padding-left:20rpx" bindinput="changeVal"></input>
+    <view bindtap="search">搜索</view>
+  </view>
+  <view class="searchTitle">
+  <text>热门搜索</text>
+  <view class="searchTitle_list">
+    <block wx:for="{{searchTitle}}" wx:key="index">
+        <view class="searchTitle_item">
+          <view class="title {{item.highlight==true?'hightlight':''}}">{{item.word}}</view>
+        </view> 
+    </block>
+  </view>
+  </view>
+</view>

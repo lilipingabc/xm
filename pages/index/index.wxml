@@ -1,0 +1,40 @@
+<!--index.wxml-->
+<view class="container">
+  <navigator class="search" url="/pages/search/search">
+    <view>
+      <icon type="search" size="16"></icon>
+      <text>搜索商品</text>
+    </view>
+  </navigator>
+  <!--导航-->
+  <view class="navList">
+    <scroll-view scroll-x class="nav text-center">
+      <view class="cu-item {{index==TabCur?'TabCur cur':''}}" wx:for="{{nav}}" wx:key="index" bindtap="handleToNav" data-id="{{item.id}}">
+        {{item.name}}
+      </view>
+    </scroll-view>
+    <view class="navChoose">
+      <indexTitle myTitle="潮流精选"></indexTitle>
+      <view class="choose_list">
+        <view class="choose_item" wx:for="{{choose}}" wx:key="index">
+            <image src="{{item.imageUrl}}"></image>
+          <view>{{item.title}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="goods">
+      <indexTitle myTitle="大家都在逛~"></indexTitle>
+      <!--商品列表-->
+      <view class="goodsList">
+        <view class="goods_items" wx:for="{{goodsList}}" wx:key="index">
+          <image src="{{item.image}}"></image>
+          <view class="goods_title">{{item.title}}</view>
+          <view class="name {{item.platform==1?'tb':'tm'}}">
+            {{item.platform==1?'淘宝':'天猫'}}
+          </view>
+          <view class="goods_price">{{item.originPrice}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

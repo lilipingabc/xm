@@ -1,0 +1,35 @@
+/* pages/search/search.wxss */
+.search{
+  width: 100%;
+  height: 90rpx;
+  background: #ff0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.search>input{
+  width: 80%;
+  height: 60rpx;
+  background: #fff;
+  border-radius: 20rpx;
+}
+.search>view{
+  font-size: 32rpx;
+}
+.searchTitle{
+  padding: 40rpx 40rpx;
+}
+.searchTitle>text{
+  font-size: 32rpx;
+  color: #999;
+}
+.searchTitle_list{
+  display: flex;
+  flex-wrap: wrap;
+}
+.searchTitle_list .searchTitle_item{
+  width:25%;
+}
+.hightlight{
+  color: red
+}

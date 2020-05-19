@@ -1,0 +1,3 @@
+<view class="choose_title">
+  <view>{{myTitle}}</view>
+</view>
