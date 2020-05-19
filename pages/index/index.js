@@ -52,7 +52,7 @@ Page({
       sort:0
     }
     getGoodsList(id,Data).then(res=>{
-      console.log(res.data.data.list,"123")
+      console.log(res.data.data.list,"lili")
       let that = this;
       that.setData({
         goodsList: [...this.data.goodsList, ...res.data.data.list]
